@@ -15,14 +15,14 @@ public class TestFizzBuzzBazz {
 
     @ParameterizedTest
     @CsvSource(value = { "3", "6", "9", "12"})
-    public void quantEntradaMultipleDe37(int input) {
+    public void quantEntradaMultipleDe3(int input) {
         String expected = "Fizz";
         String found = FBBEvaluator.eval(input);
         assertEquals(expected, found);
     }
     @ParameterizedTest
     @CsvSource(value = { "5", "10", "20", "25"})
-    public void quantEntradaMultipleDe37(int input) {
+    public void quantEntradaMultipleDe5(int input) {
         String expected = "Fizz";
         String found = FBBEvaluator.eval(input);
         assertEquals(expected, found);
