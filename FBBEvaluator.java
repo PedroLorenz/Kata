@@ -1,8 +1,13 @@
 public class FBBEvaluator {
     public static String eval(int entrada){
-        if (entrada%3==0){return "Fizz";}
-        if (entrada%5==0){return "Buzz";}
-        if (entrada%7==0){return "Bazz";}
+        String deVuelta ="";
+        if(entrada%3==0 || entrada%5==0 || entrada%7==0){
+            if (entrada%3==0){deVuelta= "Fizz";}
+            if (entrada%5==0){deVuelta+="Buzz";}
+            if (entrada%7==0){deVuelta+= "Bazz";}
+            return deVuelta;
+    }
+        
         return String.valueOf(entrada);
     }
 }

@@ -34,4 +34,11 @@ public class TestFizzBuzzBazz {
         String found = FBBEvaluator.eval(input);
         assertEquals(expected, found);
     }
+    @ParameterizedTest
+    @CsvSource(value = { "15", "30", "45", "60"})
+    public void quantEntradaMultipleDe3y5(int input) {
+        String expected = "FizzBuzz";
+        String found = FBBEvaluator.eval(input);
+        assertEquals(expected, found);
+    }
 }
