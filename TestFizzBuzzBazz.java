@@ -23,7 +23,14 @@ public class TestFizzBuzzBazz {
     @ParameterizedTest
     @CsvSource(value = { "5", "10", "20", "25"})
     public void quantEntradaMultipleDe5(int input) {
-        String expected = "Fizz";
+        String expected = "Buzz";
+        String found = FBBEvaluator.eval(input);
+        assertEquals(expected, found);
+    }
+    @ParameterizedTest
+    @CsvSource(value = { "7", "14", "28", "49"})
+    public void quantEntradaMultipleDe7(int input) {
+        String expected = "Bazz";
         String found = FBBEvaluator.eval(input);
         assertEquals(expected, found);
     }
